@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-fornecedor-crud',
-  templateUrl: './fornecedor-crud.component.html',
-  styleUrls: ['./fornecedor-crud.component.css']
+  selector: 'app-contato-crud',
+  templateUrl: './contato-crud.component.html',
+  styleUrls: ['./contato-crud.component.css']
 })
-export class FornecedorCrudComponent implements OnInit{
+export class ContatoCrudComponent implements OnInit{
 
   //construtor para configurar botao para tela produto
   constructor(private router: Router){ }
@@ -16,6 +16,6 @@ export class FornecedorCrudComponent implements OnInit{
   }
   //criando interacoes com botoes
   navigateToProductCreate(): void{
-    this.router.navigate(['/fornecedor/create'])
+    this.router.navigate(['/contato/create'])
   }
 }

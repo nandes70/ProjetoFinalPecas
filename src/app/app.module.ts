@@ -16,6 +16,12 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 import { ProductReadComponent } from './component/product/product-read/product-read.component';
 import { FornecedorCrudComponent } from './views/fornecedor-crud/fornecedor-crud.component';
 import { FornecedorReadComponent } from './component/fornecedor/fornecedor-read/fornecedor-read.component';
+import { FormapagamentoCrudComponent } from './views/formapagamento-crud/formapagamento-crud.component';
+import { FormapagamentoReadComponent } from './component/formapagamento/formapagamento-read/formapagamento-read.component';
+import { ClienteCrudComponent } from './views/cliente-crud/cliente-crud.component';
+import { ClienteReadComponent } from './component/cliente/cliente-read/cliente-read.component';
+import { ContatoCrudComponent } from './views/contato-crud/contato-crud.component';
+import { ContatoReadComponent } from './component/contato/contato-read/contato-read.component';
 
 
 @NgModule({
@@ -28,7 +34,13 @@ import { FornecedorReadComponent } from './component/fornecedor/fornecedor-read/
     ProductCrudComponent,
     ProductReadComponent,
     FornecedorCrudComponent,
-    FornecedorReadComponent
+    FornecedorReadComponent,
+    FormapagamentoCrudComponent,
+    FormapagamentoReadComponent,
+    ClienteCrudComponent,
+    ClienteReadComponent,
+    ContatoCrudComponent,
+    ContatoReadComponent
   ],
   imports: [
     BrowserModule,

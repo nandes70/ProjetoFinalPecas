@@ -1,15 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Fornecedor } from './fornecedor.model';
+import { Contato } from './contato.model';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class FornecedorService {
+export class ContatoService {
 
-  baseUrl = "http://localhost:3001/fornecedor"
+  baseUrl = "http://localhost:3001/contato"
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
   showMessage(msg: string): void {
@@ -20,26 +20,26 @@ export class FornecedorService {
     })
   }
 
-  create(product: Fornecedor): Observable<Fornecedor>{
-    return this.http.post<Fornecedor>(this.baseUrl, product)
+  create(product: Contato): Observable<Contato>{
+    return this.http.post<Contato>(this.baseUrl, product)
   }
 
-  read(): Observable<Fornecedor[]>{
-    return this.http.get<Fornecedor[]>(this.baseUrl)
+  read(): Observable<Contato[]>{
+    return this.http.get<Contato[]>(this.baseUrl)
   }
 
-  readById(id: string): Observable<Fornecedor>{
+  readById(id: string): Observable<Contato>{
     const url = `${this.baseUrl}/${id}`
-    return this.http.get<Fornecedor>(url)
+    return this.http.get<Contato>(url)
   }
 
-  update(product: Fornecedor): Observable<Fornecedor>{
+  update(product: Contato): Observable<Contato>{
     const url = `${this.baseUrl}/${product.id}`
-    return this.http.put<Fornecedor>(url, product)
+    return this.http.put<Contato>(url, product)
   }
 
-  delete(id: number): Observable<Fornecedor>{
+  delete(id: number): Observable<Contato>{
     const url = `${this.baseUrl}/${id}`
-    return this.http.delete<Fornecedor>(url)
+    return this.http.delete<Contato>(url)
   }
 }
