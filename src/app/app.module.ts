@@ -14,6 +14,8 @@ import { HomeComponent } from './views/home/home.component';
 import {MatCardModule} from '@angular/material/card';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { ProductReadComponent } from './component/product/product-read/product-read.component';
+import { FornecedorCrudComponent } from './views/fornecedor-crud/fornecedor-crud.component';
+import { FornecedorReadComponent } from './component/fornecedor/fornecedor-read/fornecedor-read.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { ProductReadComponent } from './component/product/product-read/product-r
     FooterComponent,
     HomeComponent,
     ProductCrudComponent,
-    ProductReadComponent
+    ProductReadComponent,
+    FornecedorCrudComponent,
+    FornecedorReadComponent
   ],
   imports: [
     BrowserModule,
