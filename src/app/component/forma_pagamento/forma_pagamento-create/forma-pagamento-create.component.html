@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title>Nova forma de pagamento</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Descrição" [(ngModel)]="forma_pagamento.descricao" descricao="descricao">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Tipo" [(ngModel)]="forma_pagamento.tipo" tipo="tipo">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Status" [(ngModel)]="forma_pagamento.status" status="status">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="createForma_Pagamento()" color="primary">
+        Salvar
+    </button>
+   
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>

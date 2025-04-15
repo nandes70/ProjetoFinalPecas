@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Product } from './product.model';
 import { Observable } from 'rxjs';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -25,7 +27,7 @@ export class ProductService {
   }
 
   read(): Observable<Product>{
-    return this.http.get<Product[]>(this.baseUrl)
+    return this.http.get<Product>(this.baseUrl)
   }
 
   readById(id: string): Observable<Product>{
