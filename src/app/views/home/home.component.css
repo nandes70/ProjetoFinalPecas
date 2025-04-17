@@ -1,5 +1,8 @@
 .home .title{
+<<<<<<< HEAD
     font-family: 'Times New Roman', Times, serif;
+=======
+>>>>>>> e7047ada851a80e54323e6fb3a819a2186c27d36
     font-size: 3rem;
     font-weight: 300;
     line-height: 1.2;
@@ -11,4 +14,8 @@
     font-size: 1.1rem;
     color: black;
     background-color: white;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e7047ada851a80e54323e6fb3a819a2186c27d36

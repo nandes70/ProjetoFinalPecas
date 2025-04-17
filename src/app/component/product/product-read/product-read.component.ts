@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
 import { Product } from '../product.model';
 import { ProductService } from '../product.service';
+=======
+>>>>>>> e7047ada851a80e54323e6fb3a819a2186c27d36
 
 @Component({
   selector: 'app-product-read',
@@ -9,6 +12,7 @@ import { ProductService } from '../product.service';
 })
 export class ProductReadComponent {
 
+<<<<<<< HEAD
   products!: Product[]
   displayedColumns = ['id', 'name', 'price', 'action']
 
@@ -20,4 +24,6 @@ export class ProductReadComponent {
       console.log(products)  
     })
   }
+=======
+>>>>>>> e7047ada851a80e54323e6fb3a819a2186c27d36
 }

@@ -13,8 +13,16 @@
     padding: 16px;
     background-color: #fff;
 }
+<<<<<<< HEAD
 span
 {
     font-weight: bold;
     font-family: 'Lucida fax', Arial, sans-serif;
+=======
+
+span{
+
+font-family: 'Lucida Fax', Arial, sans-serif;
+
+>>>>>>> e7047ada851a80e54323e6fb3a819a2186c27d36
 }

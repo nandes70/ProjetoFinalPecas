@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
 import { Fornecedor } from '../fornecedor.model';
 import { FornecedorService } from '../fornecedor.service';
+=======
+>>>>>>> e7047ada851a80e54323e6fb3a819a2186c27d36
 
 @Component({
   selector: 'app-fornecedor-read',
@@ -9,6 +12,7 @@ import { FornecedorService } from '../fornecedor.service';
 })
 export class FornecedorReadComponent {
 
+<<<<<<< HEAD
   fornecedor!: Fornecedor[]
     displayedColumns = ['id', 'nameFantasia', 'razao_Social', 'cpfCnpj', 'status', 'action']
  
@@ -21,4 +25,6 @@ export class FornecedorReadComponent {
       })
     
 }
+=======
+>>>>>>> e7047ada851a80e54323e6fb3a819a2186c27d36
 }

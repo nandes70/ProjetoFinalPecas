@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export interface Fornecedor
 {
     id?: number
@@ -6,4 +7,12 @@ export interface Fornecedor
     cpfCnpj: string
     status: string
     
+=======
+export interface Fornecedor {
+    id?: number
+    razaoSocial: string
+    nomeFantasia: string
+    cnpj: string
+    status: string
+>>>>>>> e7047ada851a80e54323e6fb3a819a2186c27d36
 }
