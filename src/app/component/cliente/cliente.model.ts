@@ -1,7 +1,9 @@
-export interface Cliente{
+export interface Cliente
+{
     id?: number
-    nome: String
-    cpf: String
-    dataNas: String
-    formaPagamento: String
+    nome: string
+    cpfCnpj: string
+    dataNascimento: string
+    formaPagamento: string
+    status: string
 }

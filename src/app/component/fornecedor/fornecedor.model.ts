@@ -1,5 +1,9 @@
-export interface Fornecedor{
+export interface Fornecedor
+{
     id?: number
-    name: String
-    cnpj: String
+    nameFanatasia: string
+    razao_Social: string
+    cpfCnpj: string
+    status: string
+    
 }
